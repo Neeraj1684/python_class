@@ -14,11 +14,14 @@ for player_name in cricket_players.values():
 for player_name,player_val in cricket_players.items():
   print(player_name+" " + str(player_val))
 
-if player_name == "bhuvneshwar" in cricket_players.keys():
-  print("bhuvneshwar found")
+def checkKey(cricket_players, key):
+  if key in cricket_players:
+    print("found")
+  else:
+    print("not found")
 
-else:
-  print("not found")
+key = 'virat'
+checkKey(cricket_players, key)
    
 output
 
@@ -37,4 +40,4 @@ output
 #jadeja 3
 #bumrah 5
 #bhuvneshwar 2
-#bhuvneshwar found
+#found
